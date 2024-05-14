@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #ffb6b6;
+    --secondary-color: #d9d9d9:
+    --primary-background: #a5a5a5;
+}
+/* root refers to the <html> tag / the root of the file. using "*" means global? */
+
+
+body {
+    margin: 0;
+    /* ^^ do i need units on this margin? 0 or 0px or 0% etc? */
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 16px;
+    /* ^^ usually use multiples of 4px */
+}
+
+.logo-name a img {
+    height: 40px;
+}
+
+.name {
+    font-size: 32px;
+}
+
+.coder-text {
+    color: #45A7C5;
+}
+
+.academy-text {
+    color: #1C3C5C;
+}
+

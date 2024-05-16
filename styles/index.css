@@ -50,6 +50,7 @@ header {
     text-decoration: none;
 }
 
+
 footer {
     background-color: var(--primary-color);
     text-align: center;
@@ -71,10 +72,34 @@ footer {
 
 .info {
     color: #1C3C5C;
-
+    
 }
 
 .info p {
     margin: 5px 0;
     /* 5px for top and bottom; 0(? or default?) for left and right. 0 is a keyword or means 0px? */
 }
+
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .name {
+        margin-bottom: 0;
+    }
+
+    #nav-items {
+        width: 50%;
+    }
+
+    .social-media {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+

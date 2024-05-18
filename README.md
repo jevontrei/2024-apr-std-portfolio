@@ -10,3 +10,12 @@ The header has a logo and name of the company along with the nav bar. Nav bar li
 
 ### Footer
 The footer has socials links and company info.
+
+## Pages
+
+### Home
+
+### Services
+
+### About
+The about pages uses CSS Grid to show some info about the company

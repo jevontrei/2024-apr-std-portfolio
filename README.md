@@ -14,8 +14,10 @@ The footer has socials links and company info.
 ## Pages
 
 ### Home
+The home page has an image and some filler text for now.
 
 ### Services
+The services page shows the services provided by the company with images and titles.
 
 ### About
 The about pages uses CSS Grid to show some info about the company

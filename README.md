@@ -14,7 +14,7 @@ The footer has socials links and company info.
 ## Pages
 
 ### Home
-The home page has an image and some filler text for now.
+The home page displays an image and some filler text for now.
 
 ### Services
 The services page shows the services provided by the company with images and titles.

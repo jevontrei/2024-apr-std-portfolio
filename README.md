@@ -20,7 +20,7 @@ The home page displays an image and some filler text for now.
 The services page shows the services provided by the company with images and titles.
 
 ### About
-The about pages uses CSS Grid to show some info about the company
+The about pages uses CSS Grid to show some info about the company.
 
 ### Contact
 The contact page has a contact form to fill out, but it doesn't work yet.

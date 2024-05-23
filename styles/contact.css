@@ -1,75 +1,76 @@
 main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 24px;
 }
 
 .form-elements {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
 }
 
 .form-elements label {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .form-input {
-    border: 1px solid var(--primary-color);
-    outline: none;
-    border-radius: 4px;
-    font-size: 18px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  /* ^^ removing this border/outline effect is analogous to removing text decoration/underline when hovering over a hyperlink */
+  border-radius: 4px;
+  font-size: 18px;
 }
 
 .form-input:not(.form-textarea) {
-    /* :not is a special pseudoselector; learn */
-    height: 35px;
+  /* ^^ ":not" is a special pseudoclass; learn! */
+  height: 35px;
 }
 
 .form-textarea {
-    resize: none;
+  resize: none;
 }
 
 .form-input:focus {
-    box-shadow: 0px 0px 13px 5px var(--primary-color);
+  box-shadow: 0px 0px 13px 5px var(--primary-color);
+  /* ^^ use css box shadow generator (google it) */
 }
 
 .bttn-div {
-    text-align: center;
+  text-align: center;
 }
 
 #submit {
-    /* ^^ ID bc there's only one */
-    height: 40px;
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 4px;
-    min-width: 120px;
-    font-size: 20px;
+  /* ^^ ID bc there's only one */
+  height: 40px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  min-width: 120px;
+  font-size: 20px;
 }
 
 #submit:hover {
-    cursor: pointer;
-    background-color: #ffb6b699;
-    /* ^^ add last 2 hex digits for alpha / opacity */
-    /* hover doesn't work in mobile mode (chrome dev tools / inspect) */
+  cursor: pointer;
+  /* ^^ need to specify pointer for submit button but not for links? happens automatically? */
+  background-color: #ffb6b699;
+  /* ^^ add last 2 extra hex digits for alpha/opacity */
+  /* hover doesn't work in mobile mode (chrome dev tools / inspect) */
 }
 
 @media screen and (min-width: 600px) {
-    form {
-        width: 500px;
-    }
+  /* ^^ why not use "only"? what does only mean? */
+  form {
+    width: 500px;
+  }
 
-    .form-elements {
-        flex-direction: row;
-        justify-content: space-between;
+  .form-elements {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    }
-
-    .form-input {
-        width: 70%;
-    }
-
-
+  .form-input {
+    width: 70%;
+  }
 }
